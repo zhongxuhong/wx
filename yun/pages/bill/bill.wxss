@@ -1,0 +1,271 @@
+.page{
+  width:100%;
+  overflow: hidden;
+}
+view,text{
+   font-family: "微软雅黑";
+    font-size: 32rpx;
+    color:#696969;
+    /* 字间距 */
+    /* letter-spacing:1rpx; */
+}
+.row{
+  height: 100rpx;
+  border: 1rpx solid red;
+}
+
+.row-left{
+   /* border:1rpx solid red; */
+   width: 370rpx;
+   float: left;
+   height: 100rpx;
+   line-height: 100rpx;
+   text-align: center;
+   background-color:#6495ED;
+}
+
+.row-right{
+  /* border: 1rpx solid red; */
+  width: 370rpx;
+   float: right;
+   height: 100rpx;
+   line-height: 100rpx;
+   text-align: center;
+   background-color:#B0C4DE;
+}
+.pill{
+  overflow: hidden;
+}
+.pill-content{
+    border: 1rpx solid #DCDCDC;
+    margin: 20rpx 15rpx;
+    overflow: hidden;
+}
+
+.pill-sn{
+  border-bottom: 1rpx solid  #DCDCDC;
+  height: 75rpx;
+  width: 100%;
+  line-height:75rpx;
+  padding-left: 20rpx;
+}
+.pill-content image{
+  width: 200rpx;
+  height: 300rpx;
+  float:left;
+}
+.pill-info{
+  /* border: 1rpx solid red; */
+  padding: 10rpx;
+}
+.pill-right{
+  height: 300rpx;
+  /* border: 1rpx solid red; */
+  width: 480rpx;
+  float: right;
+}
+
+.pill-right view{
+  height: 75rpx;
+  line-height: 75rpx;
+}
+
+.t-right{
+    height: 50rpx;
+    width: 120rpx;
+    line-height: 50rpx; 
+    color: 	#FFFFFF;
+    float: right;
+    text-align: center;
+    margin-right: 20rpx;
+    background-color: #7FFFAA;
+    border-radius: 10rpx;
+    margin-top:10rpx;
+}
+
+.pill-bottom{
+  border-top: 1rpx solid #DCDCDC;
+  clear: both;
+  height: 75rpx;
+  line-height: 75rpx;
+  padding-left: 20rpx;
+}
+
+.bottom-right{
+  /* border: 1rpx solid red; */
+  height: 50rpx;
+  float: right;
+  margin-right: 30rpx;
+  margin-top:15rpx;
+  background-color: #7FFFAA;
+  border-radius: 10rpx;
+  width: 120rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color:#FFFFFF;
+}
+
+
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    z-index: 10;
+    justify-content: space-between;
+    background-color: 		#FF1493;
+    position: fixed;
+    top: 0; 
+    /* border: 1rpx solid red; */
+}
+.swiper-tab-item{
+    width: 33.33%; 
+    color:#434343;
+}
+.active{
+    color:	#FFFFFF;
+    border-bottom: 4rpx solid #FFFFFF;
+}
+/* swiper{ */
+  /* text-align: center; */
+  /* height: 2000rpx; */
+  /* margin-top:100rpx; */
+/* } */
+swiper{
+display: flex;
+height: 100%;
+margin-top:80rpx;
+}
+swiper-item{
+height: 100%;
+overflow:scroll;
+/* overflow-x:hidden; */
+}
+
+.m-image {
+  width: 150rpx;
+  height: 120rpx;
+  margin: 10rpx 20rpx 0rpx 0rpx;
+  float: right;
+}
+
+.modal{
+ border: 1px solid red;
+  height:420rpx;
+  width: 400rpx; 
+  z-index: 22;
+  /* margin: 0 auto; */
+  text-align: center;
+  background-color: greenyellow;
+  position: fixed;
+  top:400rpx;
+  left: 170rpx;
+}
+
+.modal image{
+  width: 400rpx;
+  height:400rpx;
+  /* border:1rpx solid red; */
+  margin:0 auto;
+  margin-bottom: 0rpx;
+}
+
+.modal text{
+  /* border: 1rpx solid red; */
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* margin: 0 auto; */
+} 
+
+
+/* 自定义弹窗样式 */
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 20rpx 0rpx 0rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}

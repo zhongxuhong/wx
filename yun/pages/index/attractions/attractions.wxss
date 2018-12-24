@@ -1,0 +1,12 @@
+.page{
+  padding: 0 10rpx;
+  font-family:”微软雅黑”;
+    font-size: 32rpx;
+}
+.page view{
+  /* border: 1rpx solid red; */
+  height: 80rpx;
+  line-height:80rpx;
+  text-align: center
+}
+

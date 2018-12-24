@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/attractions/attractions",
+    "pages/index/news/news",
+    "pages/ticket/ticket",
+    "pages/bill/bill",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/test/test",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#87CEFA",
+    "navigationBarTitleText": "微票务",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "color":"#696969",
+    "selectedColor":"#FF1493",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/13.jpg",
+        "selectedIconPath":"pages/image/13.jpg"
+      },
+      {
+        "pagePath": "pages/bill/bill",
+        "text": "票据",
+        "iconPath": "pages/image/14.jpg",
+        "selectedIconPath": "pages/image/14.jpg"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "我",
+        "iconPath": "pages/image/12.jpg",
+        "selectedIconPath": "pages/image/12.jpg"
+      }
+    ]
+  }
+}

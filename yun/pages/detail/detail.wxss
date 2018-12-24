@@ -1,0 +1,150 @@
+view,text,label{
+    font-family: "微软雅黑";
+    font-size: 32rpx;
+    color:#696969;
+    /* 字和字的间距 */
+    letter-spacing:5rpx;
+}
+
+.content{
+  margin-bottom: 120rpx;
+}
+
+.head image{
+  width: 750rpx;
+  height: 400rpx;
+}
+.row{
+  height: 100rpx;
+  /* border: 1rpx solid red; */
+  border-bottom: 2rpx solid 	#F5F5F5;
+}
+.title{
+width: 200rpx;
+line-height: 100rpx;
+float: left;
+padding-left: 20rpx;
+/* border: 1rpx solid red; */
+}
+.row-location{
+  height: 100rpx;
+  /* border: 1rpx solid red; */
+  border-bottom: 20rpx solid 	#F5F5F5;
+}
+.row-location .title{
+    width: 160rpx;
+    line-height: 100rpx;
+    float: left;
+    padding-left: 20rpx;
+}
+.info-location{
+    /* border: 1rpx solid red; */
+    /* text-align: left; */
+    line-height: 100rpx;
+    width: 556rpx;
+    float: left;
+}
+/* .info-text{
+  float: right;
+} */
+.info-img{
+  /* border: 1rpx solid red; */
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 25rpx;
+  float:right;
+}
+
+.info{
+/* border: 1rpx solid red; */
+  text-align: right;
+  line-height: 100rpx;
+  padding-right: 40rpx;
+}
+
+.row-project{
+  height: 100rpx;
+  border-top: 20rpx solid 	#F5F5F5;
+  border-bottom: 2rpx solid 	#F5F5F5;
+}
+
+.project-text text{
+   font-size: 32rpx;
+   /* color:	#A9A9A9; */
+   letter-spacing:10rpx;
+}
+
+.row-project .title{
+    width: 160rpx;
+    line-height: 100rpx;
+    float: left;
+    padding-left: 20rpx;
+}
+
+/*主容器*/
+.stepper {
+  width:80px;
+  height:30px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  float: right;
+  margin-right: 40rpx;
+  margin-top: 18rpx;
+}
+/*加号和减号*/
+.stepper text {
+  float: left;
+  width: 19px;
+  line-height: 26px;
+  text-align: center;
+}
+/*数值*/
+.stepper input {
+  width: 40px;
+  height: 26px;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+/*普通样式*/
+.stepper .normal {
+  color:black;
+}
+/*禁用样式*/
+.stepper .disable {
+  color: #ccc;
+}
+
+.footer{
+  width: 100%;
+  /* 相对与浏览器的位置 */
+  position: fixed;
+  bottom:0px;
+}
+.footer .price{
+  /* border: 1px solid red; */
+  width: 376rpx;
+  float: left;
+   height: 100rpx;
+   line-height: 100rpx;
+   text-align: center;
+   background-color:#3CB371;
+   color: 	#FFFFFF;
+   letter-spacing:5rpx;
+}
+.footer .buy{
+  /* border: 1px solid red; */
+  width: 374rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  float: left;
+  background-color:#00FA9A;
+  color: 	#FFFFFF;
+  /* font-weight: bold; */
+  letter-spacing:5rpx;
+}

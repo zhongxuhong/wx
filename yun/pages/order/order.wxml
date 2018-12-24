@@ -1,0 +1,45 @@
+<view class='content'>
+    <view class='row'>
+      <label class='title'>景点名称：</label>
+      <view class='info'>{{proname}}</view>
+    </view>
+    <view class='row'>
+      <label class='title'>订单编号：</label>
+      <view class='info'>{{orderid}}</view>
+    </view>
+    <view class='row'>
+      <label class='title'>创建时间：</label>
+      <view class='info'>{{createtime}}</view>
+    </view>
+    <view class='row'>
+      <label class='title'>景点地扯：</label>
+      <view class='info'>{{placedetail}}</view>
+    </view>  
+    <view class='row'>
+      <label class='title'>商家名称：</label>
+      <view class='info'>云台山茶旅集团</view>
+    </view>
+    <view class='row'>
+      <label class='title'>景点价格：</label>
+      <view class='info'>￥{{fee}}元</view>
+    </view>
+    <view class='row'>
+      <label class='title'>购买数量：</label>
+      <view class='info'>{{total}}张</view>
+    </view>
+    <view class='row'>
+      <label class='title'>总共应付：</label>
+      <view class='info'>￥{{numfee}}元</view>
+    </view>
+</view>
+    <view class='footer'>
+      <text class='f-title'>选择支付方式</text>
+    </view>
+    <view class='row-location' bindtap='pay'>
+      <image class='row-img' src='../image/16.jpg'></image>
+      <view class='info-location'>
+        <text  class='info-text'>微信支付(点击支付)</text>
+        <image class='info-img' src='../image/15.jpg'></image>
+      </view>
+    </view>
+    

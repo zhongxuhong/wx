@@ -1,0 +1,52 @@
+
+<view class='content'>
+    <view class='head'>
+         <image src="../image/99.jpg"></image>
+    </view>
+
+    <view class='row-location'>
+      <label class='title'>地点：</label>
+      <view class='info-location' bindtap='openLocation'>
+        <text  class='info-text'>{{placedetail}}</text>
+        <image class='info-img' src='../image/15.jpg'></image>
+      </view>
+    </view>
+
+    <view class='row'>
+      <label class='title'>景点名称：</label>
+      <view class='info'>{{title}}</view>
+    </view>
+    <view class='row'>
+      <label class='title'>价格：</label>
+      <view class='info'>￥{{fee}}元</view>
+    </view>
+    <view class='row'>
+      <label class='title'>购买数量</label> 
+      <view class='stepper'>
+      <text class='{{minusStatus}}' type='number'  bindtap='bindMinus'>-</text>
+      <input bindinput='bindManual' value='{{num}}'></input>
+      <text bindtap='bindPlus'>+</text>
+      </view>
+    </view>
+    <view class='row'>
+      <label class='title'>状态：</label>
+      <view class='info'>售票中</view>
+    </view>
+    <view class='row'>
+      <label class='title'>时间区间：</label>
+      <view class='info'>{{start}}-{{end}}</view>
+    </view>
+    <view class='row-project'>
+      <label class='title'>景点介绍</label>
+      <view class='info-location'>
+        <image class='info-img' src='../image/15.jpg'></image>
+      </view>
+    </view>
+    <view class='project-text'>
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{content}}</text>
+    </view>
+    <view class='footer'>
+        <view class='price'>总金额：￥{{numprice}}元</view>
+        <view class='buy' bindtap='weixinpay'>立即购买</view>
+    </view>  
+</view>

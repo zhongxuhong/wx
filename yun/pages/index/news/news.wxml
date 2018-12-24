@@ -1,0 +1,16 @@
+<view class='page'>
+    <view class='list'>
+        <image src='../../image/2.jpg'></image>
+        <view class='right-content'>
+            <view class='title'>景区建设简报</view>
+            <view class='content'>项目概况：本工程参照电视剧《水浒传》忠义堂修建，位于好汉湾500米滑索上站，占地面积300平方米，上下共两层的纯木结构建筑，采用美国花旗松木+雕花板建设而成，长13米、宽8.8米、高3.5米，堂外建有及时雨宋江、玉麒麟卢俊义、智多星吴用三尊雕塑，两侧共设有53把交椅。</view>
+        </view>
+    </view>
+    <view class='list'>
+        <image src='../../image/2.jpg'></image>
+        <view class='right-content'>
+            <view class='title'>景区建设简报</view>
+            <view class='content'>项目概况：本工程参照电视剧《水浒传》忠义堂修建，位于好汉湾500米滑索上站，占地面积300平方米，上下共两层的纯木结构建筑，采用美国花旗松木+雕花板建设而成，长13米、宽8.8米、高3.5米，堂外建有及时雨宋江、玉麒麟卢俊义、智多星吴用三尊雕塑，两侧共设有53把交椅。</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,81 @@
+<view class='page'>
+    <view class='page_row'>  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class=""  placeholder="请输入关键字" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+      <view class='sousuo'>搜索</view>  
+    </view>  
+    <view class='header'>
+          <swiper class='lunbo' autoplay='true' interval='3000' indicator-dots='true'
+          indicator-active-color='  #FF7F50' circular='true'>
+            <swiper-item><image src='../image/111.jpg'></image></swiper-item>
+            <swiper-item><image src='../image/222.jpg'></image></swiper-item>
+            <swiper-item><image src='../image/333.jpg'></image></swiper-item>
+          </swiper>
+          <view class='ximg'>
+              <view class='bor' bindtap='attractions'>
+                  <image src='../image/a1.png'></image>
+                  <text>景区介绍</text>
+              </view>
+              <view class='bor'>
+                  <image src='../image/a2.png'></image>
+                  <text>洒店餐饮</text>
+              </view>
+              <view class='bor' bindtap='news'>
+                  <image src='../image/a3.png'></image>
+                  <text>景区资讯</text>
+              </view>
+              <view class='bor' bindtap='openLocation'>
+                  <image src='../image/a4.png'></image>
+                  <text>景区导航</text>
+              </view>
+          </view>
+    </view>
+    <view class="content">
+         <view class='tiao'><text>云台山套票</text></view>
+         <view class='c-bor'>
+              <image src='../image/t1.jpg'></image>
+               <view><text>套票1 二日游</text></view>
+         </view>
+         <view class='c-bor'>
+               <image src='../image/t1.jpg'></image>
+               <view><text>套票2 三日游</text></view>
+         </view>
+         <view class='c-bor'>
+              <image src='../image/t1.jpg'></image>
+               <view><text>套票3 五日游</text></view>
+         </view>
+         <view class='c-bor'>
+               <image src='../image/t1.jpg'></image>
+               <view><text>套票4 七日游</text></view>
+         </view>
+          <!-- <view><image class='cimg1' src="../image/6.jpg"></image></view>
+          <view><image class='cimg2' src="../image/7.jpg"></image></view>
+          <view><image class='cimg3' src="../image/8.jpg"></image></view> -->
+    </view>
+
+    <view>
+      <!-- <text bindtap='openLocation'>查看地图</text> -->
+      <view class='ftex'><text>热门景点</text></view>     
+      <!-- <text class='rtex'>更多</text> -->
+      <view class='footer'> 
+            <image src="../image/9.jpg" id='13' bindtap='imgbtn'></image>
+            <image src="../image/10.jpg" id='11' bindtap='imgbtn'></image>
+            <image src="../image/11.jpg" id='10' bindtap='imgbtn'></image>
+            <image src="../image/91.png" id='8' bindtap='imgbtn'></image>
+            <image src="../image/92.png" id='9' bindtap='imgbtn'></image>
+            <image src="../image/93.jpg" id='7' bindtap='imgbtn'></image>
+      </view>
+      <!-- <view class='footer'> 
+            <image src="../image/91.png" bindtap='imgbtn'></image>
+            <image src="../image/92.png" bindtap='imgbtn'></image>
+            <image src="../image/93.jpg" bindtap='imgbtn'></image>
+      </view> -->
+    </view>
+</view>
+
+
+

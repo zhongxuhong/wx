@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<!-- <view class="container"> -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+   <!-- <view>
+    <text bindtap='piaourl'>票务首页</text>
+  </view> -->
+<!-- </view> -->
+  <view class='content'>
+          <image class='image' src='../image/52.png'></image>
+          <text>关于我们</text>
+          <image class='f-image' src='../image/15.jpg'></image>
+  </view>
+  <view class='content'>
+          <image class='image' src='../image/53.jpg'></image>
+          <text>联系我们</text>
+          <image class='f-image' src='../image/15.jpg'></image>
+  </view>

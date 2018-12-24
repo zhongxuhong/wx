@@ -1,0 +1,40 @@
+.page{
+  width: 100%;
+  height: 100%;
+}
+view,text{
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+}
+.head{
+  width: 100%;
+  height: 400rpx;
+  /* border: 1rpx solid red; */
+}
+.head image{
+    width: 400rpx;
+    height: 400rpx;
+    padding: 10rpx;
+    float: left;
+}
+.head-right{
+  /* border: 1rpx solid red; */
+   width: 330rpx;
+   height: 420rpx;
+   float: right;
+}
+.row{
+  /* border: 1rpx solid red; */
+  height: 60rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+label{
+  /* border: 1rpx solid red; */
+  line-height: 60rpx;
+}
+.content{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100%;
+  border: 1rpx solid red;
+}

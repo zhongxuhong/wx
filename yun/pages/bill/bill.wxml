@@ -1,0 +1,101 @@
+<view class='page'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">末使用</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">已使用</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">未付款</view>
+  </view>
+  <!-- <view class='modal'  hidden="{{modalHidden}}"   bindtap='modalhide'>
+              <text>扫码验票[{{orderid}}]</text>
+              <image class="m-image" src="https://xpiao.ytsshop.com/api/qrcode.php?orderid={{orderid}}&openid={{openid}}"></image>
+  </view>   -->
+  <swiper current="{{currentTab}}" duration="300" style='height:1200rpx;'  bindchange="swiperTab">
+      <!-- 末使用的票据-->
+    <swiper-item >
+        <view class='pill' wx:for="{{array}}" wx:key="item">
+        <view class='pill-content'>
+            <view class='pill-sn'><text>票据编号：{{item.id}}</text></view>
+            <view class='pill-info'>
+              <image class='' src='../image/9.jpg'></image>
+              <view class='pill-right'>
+                  <view><text>{{item.proname}}</text><text class='t-right'>末使用</text></view>
+                  <view><text>总金额：{{item.fee*item.total}}元</text></view>
+                  <view><text decode="{{true}}">价格：{{item.fee}}元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量：{{item.total}}张       </text></view>
+                  <view><text>时间：{{item.start}}-{{item.end}}</text>
+              </view>
+            </view>
+        </view>
+        <view class='pill-bottom'>
+              <text class='bottom-left'>购买时间：{{item.paytime}}</text>
+              <text class='bottom-right' bindtap='showDialogBtn'  catchtouchmove="true" id='{{item.id}}'>二维码</text>
+        </view>
+        </view>
+        </view>
+        
+    </swiper-item>
+
+    <!-- 已使用的票据 -->
+    <swiper-item>
+        <view class='pill' wx:for="{{array}}" wx:key="item">
+        <view class='pill-content'>
+            <view class='pill-sn'><text>票据编号：{{item.id}}</text></view>
+            <view class='pill-info'>
+              <image class='' src='../image/10.jpg'></image>
+              <view class='pill-right'>
+                  <view><text>{{item.proname}}</text><text class='t-right'>已使用</text></view>
+                  <view><text>总金额：{{item.fee*item.total}}元</text></view>
+                  <view><text decode="{{true}}">价格：{{item.fee}}元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量：{{item.total}}张                   </text></view>
+                  <view><text>时间：{{item.start}}-{{item.end}}</text>
+              </view>
+            </view>
+        </view>
+        <view class='pill-bottom'>
+              <text class='bottom-left'>使用时间：{{item.scantime}}</text>
+              <text class='bottom-right' bindtap='delorders' id='{{item.id}}'>删除</text>
+        </view>   
+        </view>
+        </view>
+
+         
+    </swiper-item>
+
+<!-- 未付款订单 -->
+  <swiper-item>
+      <view class='pill' wx:for="{{array}}" wx:key="item">
+      <view class='pill-content'>
+          <view class='pill-sn'><text>票据编号：{{item.id}}</text></view>
+          <view class='pill-info'>
+            <image class='' src='../image/10.jpg'></image>
+            <view class='pill-right'>
+                <view><text>{{item.proname}}</text><text class='t-right' bindtap='delorder' id='{{item.id}}'>删除</text></view>
+                <view><text>总金额：{{item.fee*item.total}}元</text></view>
+                <view><text decode="{{true}}">价格：{{item.fee}}元&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数量：{{item.total}}张           </text></view>
+                <view><text>下单时间：{{item.createtime}}</text>
+            </view>
+          </view>
+      </view>
+      <view class='pill-bottom'>
+        <text class='bottom-left'>关闭时间：{{item.closetime}}</text>
+        <text class='bottom-right' bindtap='orderpay' id='{{item.id}}'>付款</text>
+      </view>   
+      </view>
+      </view>  
+  </swiper-item>
+  </swiper>
+    <!-- 自定义模态框 -->
+        <!--弹窗-->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+        <view class="modal-dialog" wx:if="{{showModal}}">
+          <view class="modal-title">扫码验票[{{orderid}}]</view>
+          <view class="modal-content">
+            <view class="modal-input">
+              <!-- <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input"                             placeholder="请输入数量"></input> -->
+                <image src='https://xpiao.ytsshop.com/api/qrcode.php?orderid={{orderid}}&openid={{openid}}'></image>
+            </view>
+          </view>
+          <view class="modal-footer">
+            <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+            <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+        </view>
+    </view>
+
+</view>

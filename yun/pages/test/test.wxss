@@ -1,0 +1,53 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#F5DEB3;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: 	#FFFFFF;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+
+.content{
+  /* border: 1rpx solid red; */
+    height: 100rpx;
+    /* border-top:20rpx solid #F5F5F5; */
+    border-bottom:2rpx solid #F5F5F5;
+}
+.content .image{
+  /* border:1rpx solid red; */
+  height: 60rpx;
+  width: 60rpx;
+  float: left;
+  padding: 20rpx;
+}
+.content text{
+  /* border:1rpx solid red; */
+  float: left;
+  line-height: 100rpx;
+   font-family: "微软雅黑";
+    font-size: 32rpx;
+    color:#696969;
+    /* 字和字的间距 */
+    letter-spacing:5rpx;
+}
+.f-image{
+  /* border: 1rpx solid red; */
+  height: 100rpx;
+  width: 100rpx;
+  float: right;
+}
